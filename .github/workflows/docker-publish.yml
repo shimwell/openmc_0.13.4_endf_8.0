@@ -34,4 +34,4 @@ jobs:
         with:
           push: true
           file: Dockerfile
-          tags: ghcr.io/shimwell/openmc_0_13_3_endf_8_0
+          tags: ghcr.io/shimwell/openmc_0_13_4_endf_8_0

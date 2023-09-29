@@ -10,8 +10,9 @@ RUN sudo apt-get install -y git
 RUN git clone --recurse-submodules https://github.com/openmc-dev/openmc.git
 RUN cd openmc && mkdir build 
 RUN cd openmc/build &&  cmake ..
-RUN cd openmc/build &&  make
+RUN cd openmc/build &&  make -j
 RUN cd openmc/build &&  make install
+RUN cd openmc && pip install .
 
 
 RUN pip install openmc_data_downloader
